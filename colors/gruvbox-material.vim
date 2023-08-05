@@ -1822,18 +1822,23 @@ highlight! link DirvishArg Yellow
 " syn_end }}}
 " syn_begin: NvimTree {{{
 " https://github.com/kyazdani42/nvim-tree.lua
-if !s:configuration.transparent_background
-  call gruvbox_material#highlight('NvimTreeNormal', s:palette.fg0, s:palette.bg_dim)
-  call gruvbox_material#highlight('NvimTreeEndOfBuffer', s:palette.bg_dim, s:palette.bg_dim)
-  call gruvbox_material#highlight('NvimTreeVertSplit', s:palette.bg0, s:palette.bg0)
-  call gruvbox_material#highlight('NvimTreeCursorLine', s:palette.none, s:palette.bg0)
-endif
+" HACK: For much better look,
+" @ 1. Comment out and disable 
+" @ 2. Disable 'lunarvim' transparency 
+" @ 3. Enable 'terminal' transparency
+" if !s:configuration.transparent_background
+"   call gruvbox_material#highlight('NvimTreeNormal', s:palette.fg0, s:palette.bg_dim)
+"   call gruvbox_material#highlight('NvimTreeEndOfBuffer', s:palette.bg_dim, s:palette.bg_dim)
+"   call gruvbox_material#highlight('NvimTreeVertSplit', s:palette.bg0, s:palette.bg0)
+"   call gruvbox_material#highlight('NvimTreeCursorLine', s:palette.none, s:palette.bg0)
+" endif
+" ----
 highlight! link NvimTreeSymlink Fg
-highlight! link NvimTreeFolderName Green
+highlight! link NvimTreeFolderName Blue
 highlight! link NvimTreeRootFolder Grey
-highlight! link NvimTreeFolderIcon Orange
-highlight! link NvimTreeEmptyFolderName Green
-highlight! link NvimTreeOpenedFolderName Green
+highlight! link NvimTreeFolderIcon Yellow
+highlight! link NvimTreeEmptyFolderName Blue
+highlight! link NvimTreeOpenedFolderName Blue
 highlight! link NvimTreeExecFile Fg
 highlight! link NvimTreeOpenedFile Fg
 highlight! link NvimTreeSpecialFile Fg
@@ -1841,10 +1846,10 @@ highlight! link NvimTreeImageFile Fg
 highlight! link NvimTreeMarkdownFile Fg
 highlight! link NvimTreeIndentMarker Grey
 highlight! link NvimTreeGitDirty Yellow
-highlight! link NvimTreeGitStaged Blue
+highlight! link NvimTreeGitStaged Aqua
 highlight! link NvimTreeGitMerge Orange
 highlight! link NvimTreeGitRenamed Purple
-highlight! link NvimTreeGitNew Aqua
+highlight! link NvimTreeGitNew Green
 highlight! link NvimTreeGitDeleted Red
 highlight! link NvimTreeLspDiagnosticsError RedSign
 highlight! link NvimTreeLspDiagnosticsWarning YellowSign
