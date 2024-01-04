@@ -147,10 +147,11 @@ call gruvbox_material#highlight('NonText', s:palette.bg5, s:palette.none)
 if has('nvim')
   call gruvbox_material#highlight('Whitespace', s:palette.bg5, s:palette.none)
   call gruvbox_material#highlight('SpecialKey', s:palette.orange, s:palette.none)
+  " call gruvbox_material#highlight('SpecialKey', s:palette.bg5, s:palette.none)
 else
   call gruvbox_material#highlight('SpecialKey', s:palette.bg5, s:palette.none)
 endif
-call gruvbox_material#highlight('Pmenu', s:palette.fg1, s:palette.bg3)
+call gruvbox_material#highlight('Pmenu', s:palette.fg1, s:palette.bg0)
 call gruvbox_material#highlight('PmenuSbar', s:palette.none, s:palette.bg3)
 if s:configuration.menu_selection_background ==# 'grey'
   call gruvbox_material#highlight('PmenuSel', s:palette.bg3, s:palette.grey2)
@@ -170,8 +171,8 @@ if s:configuration.float_style ==# 'dim'
   call gruvbox_material#highlight('FloatBorder', s:palette.grey1, s:palette.bg_dim)
   call gruvbox_material#highlight('FloatTitle', s:palette.orange, s:palette.bg_dim, 'bold')
 else
-  call gruvbox_material#highlight('NormalFloat', s:palette.fg1, s:palette.bg3)
-  call gruvbox_material#highlight('FloatBorder', s:palette.grey1, s:palette.bg3)
+  call gruvbox_material#highlight('NormalFloat', s:palette.fg1, s:palette.bg0)
+  call gruvbox_material#highlight('FloatBorder', s:palette.grey1, s:palette.bg0)
   call gruvbox_material#highlight('FloatTitle', s:palette.orange, s:palette.bg3, 'bold')
 endif
 call gruvbox_material#highlight('Question', s:palette.yellow, s:palette.none)
