@@ -151,7 +151,7 @@ if has('nvim')
 else
   call gruvbox_material#highlight('SpecialKey', s:palette.bg5, s:palette.none)
 endif
-call gruvbox_material#highlight('Pmenu', s:palette.fg1, s:palette.bg0)
+call gruvbox_material#highlight('Pmenu', s:palette.fg1, s:palette.bg2)
 call gruvbox_material#highlight('PmenuSbar', s:palette.none, s:palette.bg3)
 if s:configuration.menu_selection_background ==# 'grey'
   call gruvbox_material#highlight('PmenuSel', s:palette.bg3, s:palette.grey2)
@@ -175,8 +175,8 @@ elseif s:configuration.float_style ==# 'none'
   call gruvbox_material#highlight('FloatBorder', s:palette.grey1, s:palette.none)
   call gruvbox_material#highlight('FloatTitle', s:palette.orange, s:palette.none, 'bold')
 else
-  call gruvbox_material#highlight('NormalFloat', s:palette.fg1, s:palette.bg0)
-  call gruvbox_material#highlight('FloatBorder', s:palette.grey1, s:palette.bg0)
+  call gruvbox_material#highlight('NormalFloat', s:palette.fg1, s:palette.bg2)
+  call gruvbox_material#highlight('FloatBorder', s:palette.grey1, s:palette.bg2)
   call gruvbox_material#highlight('FloatTitle', s:palette.orange, s:palette.bg3, 'bold')
 endif
 call gruvbox_material#highlight('Question', s:palette.yellow, s:palette.none)
