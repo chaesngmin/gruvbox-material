@@ -1851,6 +1851,13 @@ highlight! link DirvishArg Yellow
 "   call gruvbox_material#highlight('NvimTreeCursorLine', s:palette.none, s:palette.bg0)
 " endif
 " ----
+" highlight! link NvimTreeNormal Bg2
+call gruvbox_material#highlight('NvimTreeNormal', s:palette.fg0, s:palette.bg_dim)
+" call gruvbox_material#highlight('NvimTreeNormal', s:palette.fg0, ['#1d2021', '234'])
+call gruvbox_material#highlight('NvimTreeCursorLine', s:palette.none, s:palette.bg0)
+
+" highlight! link NvimTreeCursorLine Normal
+" highlight! link NvimTreeEndOfBuffer NonText
 highlight! link NvimTreeSymlink Fg
 highlight! link NvimTreeFolderName Blue
 highlight! link NvimTreeRootFolder Grey
